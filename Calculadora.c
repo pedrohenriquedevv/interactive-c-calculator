@@ -42,6 +42,7 @@ void menu(int history, float accumulator)
     printf("/////////////////\n");
     if(history)
     {
+        printf("----------------\n");
         printf("[ Memory: %.2f ] \n", accumulator);
         printf("----------------\n");
     }
@@ -124,6 +125,10 @@ int main()
 
             if(history == 1)
             {
+                clear();
+                printf("----------------\n");
+                printf("[ Memory: %.2f ] \n", accumulator);
+                printf("----------------\n");
                 printf("\nContinue account?\n");
                 printf("1 - Yes\n");
                 printf("2 - No\n");
